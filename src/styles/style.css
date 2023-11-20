@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--PaleBlue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#card {
+    width: 340px;
+    height: 600px;
+    background-color: var(--VeryPaleBlue);
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+#image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 1.4rem;
+}
+
+#text {
+    text-align: center;
+}
+
+#text h1 {
+    font-weight: 900;
+    color: var(--DarkBlue);
+}
+
+#text p {
+    color: var(--DesaturatedBlue);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.8rem;
+    margin-top: 1rem;
+}
+
+#annualPlan {
+    width: 100%;
+    height: 90px;
+    border-radius: 16px;
+    background-color: hsla(225, 100%, 94%, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#annualPlan > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: -30px;
+}
+
+#annualPlan > div p:first-child{
+    color: var(--DarkBlue);
+    font-weight: 900;
+}
+
+#annualPlan > div p:last-child{
+    color: var(--DesaturatedBlue);
+    font-weight: 500;
+}
+
+#annualPlan > p a{
+    color: var(--BrightBlue);
+    font-weight: 700;
+}
+
+#btn button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#btnPri {
+    background-color: var(--BrightBlue);
+    color: var(--PaleBlue);
+    box-shadow: 0px 8px 16px hsla(245, 75%, 52%, 0.3);
+}
+
+#btnPri:hover {
+    cursor: pointer;
+    background-color: hsl(245, 70%, 58%)
+}
+
+#btnSec {
+    color: var(--DesaturatedBlue);
+    text-align: center;
+    margin-top: 1.4rem;
+    font-weight: 900;
+}
+
+#btnSec:hover {
+    cursor: pointer;
+    color: var(--DarkBlue);
+}
+
+.attribution {
+    margin-top: 1rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--BrightBlue);
+}
